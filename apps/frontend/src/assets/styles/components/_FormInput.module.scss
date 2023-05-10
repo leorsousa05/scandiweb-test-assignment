@@ -1,0 +1,28 @@
+@import "../themes/main-theme.scss";
+
+.form_input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 0;
+
+    input {
+        background-color: #734cdc60;
+        width: 360px;
+        padding: 16px 22px;
+        border-radius: 2px;
+        color: white;
+        border: none;
+        outline: none;
+
+        &::placeholder {
+            color: #ffffff99;
+        }
+    }
+
+    .gradient_border {
+        width: calc(360px + 22px * 2);
+        height: 2px;
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,12,1) 18%, rgba(71,59,59,1) 40%, rgba(128,8,101,1) 60%, rgba(174,67,67,1) 84%, rgba(0,212,255,1) 100%);
+    }
+}

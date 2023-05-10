@@ -1,0 +1,5 @@
+@import "../themes/main-theme.scss";
+
+.button {
+    @include button();
+}

@@ -1,0 +1,40 @@
+@import "../themes/main-theme.scss";
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    padding: 0 $side-padding;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 1200px;
+
+        @media screen and (max-width: $small-screen) {
+            flex-direction: column;
+            padding: 12px 0;
+        }
+
+        .buttons_container {
+            display: flex;
+            flex-direction: row;
+            gap: 32px;
+
+            @media screen and (max-width: $small-screen) {
+                flex-direction: column-reverse; 
+                align-items: center;
+                gap: 0;
+            }
+
+        }
+        
+    }
+}
+
+

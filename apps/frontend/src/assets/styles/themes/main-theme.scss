@@ -1,0 +1,37 @@
+// Colors
+$primary-color: #734cdc;
+$secondary-color: #000031;
+$background-color: #121212;
+
+// Fonts
+$text-color: white;
+$font-family: montserrat, sans-serif;
+
+// Spacing
+$base-spacing: 1rem;
+$small-spacing: 0.5rem;
+$medium-spacing: 1.5rem;
+$large-spacing: 2rem;
+$side-padding: 2rem;
+
+// Breakpoints
+$small-screen: 576px;
+$medium-screen: 768px;
+$large-screen: 992px;
+$extra-large-screen: 1200px;
+
+@mixin button {
+    font-size: 1rem;
+    border: 1px solid black;
+    background-color: $primary-color;
+    border-radius: 6px;
+    font-weight: 600;
+    padding: 8px 12px;
+    color: white;
+    cursor: pointer;
+
+    a {
+        color: white;
+        font-weight: 600;
+    }
+}

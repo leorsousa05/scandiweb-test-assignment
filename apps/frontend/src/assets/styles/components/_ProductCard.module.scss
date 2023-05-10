@@ -1,0 +1,28 @@
+@import "../themes/main-theme.scss";
+
+.product_container {
+    position: relative;
+    background-color: #121212; 
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 2px 0px, rgba(0, 0, 0, 0.5) 0px 2px 6px 2px;
+    border-radius: 12px;
+
+    p {
+        color: rgba(255, 255, 255, .90);
+    }
+
+    input[type='checkbox'] {
+        position: absolute; 
+        width: 18px;
+        height: 18px;
+        border: 1px solid black;
+        border-radius: 0;
+        left: 10%;
+        top: 10%;
+    }
+}
